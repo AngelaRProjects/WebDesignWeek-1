@@ -7,26 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My First Website</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    
 </head>
+
 <body style="background-color:antiquewhite;">
-
+ 
+<header>
     <h1 style="font-size:60px;text-align: center; color: darkgreen">First Day of Learning HTML</h1>
-
+</header>
     <hr>
-    
+
+<article>
+
     <h2 style="font-size:30px;color:darkgreen;">Following W3Schools Tutorial</h2>
 
     <img src="img/w3schools.jpg" alt="w3schools.com" width="104" height="142">
 
-    <p>Today I am following the <a href="https://www.w3schools.com/"> w3schools</a> tutorials in class so I can <em>master</em> coding in <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+    <p style="">Today I am following the <a href="https://www.w3schools.com/"> w3schools</a> tutorials in class so I can <em>master</em> coding in <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+    <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Maiores explicabo nisi velit, placeat <mark>ipsum dolores ratione</mark> iusto a? Aperiam reprehenderit minima dolores nam! Cum reprehenderit quidem placeat quibusdam tempora architecto?
+    </p> 
+    <p>iure magni pariatur corrupti dicta totam excepturi perspiciatis ab. Magni similique, dolor <del>eligendi</del> temporibus laboriosam, quas consequuntur nesciunt repellat sint voluptas rem aliquid atque deleniti doloribus, nostrum tenetur ut.
+    </p>
+</article> 
 
-    <p>Lorem ipsum dolor sit amet <b>consectetur</b> adipisicing elit. Maiores explicabo nisi velit, placeat <mark>ipsum dolores ratione</mark> iusto a? Aperiam reprehenderit minima dolores nam! Cum reprehenderit quidem placeat quibusdam tempora architecto?</p> 
-    <p>iure magni pariatur corrupti dicta totam excepturi perspiciatis ab. Magni similique, dolor <del>eligendi</del> temporibus laboriosam, quas consequuntur nesciunt repellat sint voluptas rem aliquid atque deleniti doloribus, nostrum tenetur ut.</p>
-    
-    <hr>
+<hr>
 
-    <h3 style="font-size:30px;color:darkgreen;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Here Are Some Handy Websites</h3>
+<Nav>
+<h2 style="font-size:30px;color:darkgreen;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Here Are Some Handy Websites</h2>
     <ul>
         <li> 
             <a href="https://www.w3schools.com">Practice on W3Schools</a> 
@@ -38,67 +44,77 @@
             <a href="https://developer.mozilla.org/en-US/">Visit Mozilla Developer Network</a>
         </li>
     </ul>
+</Nav>
 
-    <hr>
+    
+<hr>
+<section>
+    <h2 style="font-size:30px;color: darkgreen;font-family: Arial, Helvetica, sans-serif;">Quote to Motivate Me Today</h2>
 
-    <h4 style="font-size:30px;color: darkgreen;font-family: Arial, Helvetica, sans-serif;">Quote to Motivate Me Today</h4>
-
-    <p style="color: rgb(2, 78, 2);">Quote From codecademy:</p>
-    <blockquote style="color: rgb(54, 216, 54);">
+        <p style="color: rgb(2, 78, 2);">Quote From codecademy:</p>
+            <blockquote style="color: rgb(54, 216, 54);">
         <q>You might not think that programmers are artists, but programming is an extremely creative profesion. It's logic-based creativity.
         </q>
-    </blockquote>
+            </blockquote>
     
     <p style="color: rgb(2, 78, 2);"><cite>John Romero, Video Game Devloper</cite></p>
 
+</section>
     <hr>
 
-    <h5 style="font-size:30px;color:darkgreen;font-family:courier;">Class Schedule</h5>
-    
+<header>
+    <h2 style="font-size:30px;color:darkgreen;font-family:courier;">Class Schedule</h2>
+ </header>   
+ 
+
     <table style="width: 100%;">
           
-    <caption>Class Schedule</caption>
-    
-    <style>
-        table, th, td {
+     <style>
+        table, tr, th, td, caption  {
         border: 1px solid black;
+        font-family: 'Courier New', Courier, monospace;
         border-collapse: collapse;
         }
-        th, td  {
+        th, tr, th, td, caption  {
         border-color: darkgreen;
         }
-        th, td {
+        th, tr, td, caption {
         padding-top: 10px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
         padding-left: 30px;
-        padding-right: 40px;
+        padding-right: 30px;
         }
     </style>
+        <caption>Class Schedule</caption>
 
         <thead>
 
         <tr>
-            <th>Week</th>
-            <th>Day</th>
-            <th>Date</th>
-            <th>Time</th>
-            <th>Module</th>
-            <th>Status</th>
+            <th scope="col">Week</th>
+            <th scope="col">Day</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Module</th>
+            <th scope="col">Status</th>
            
         </tr>
         
         </thead>
         
         <tbody>
-            
+
             <tr>
             <td rowspan="2">2</td>
             <td>Wed</td>
-            <td>6/4/2025</td>
-            <td>9:30AM - 11:30AM</td>
+            <td>
+                <time datetime="2025-06-04">6/4/2025</time>
+            <td>
+                <time datetime="09:30">9:30AM </time> - <time datetime="11:00">11:30AM</time> 
+            </td>
             <td>Module 2</td>
             <td>Upcoming</td>
             </tr>
+
             <tr>
             <td>Mon</td>
             <td>6/2/2025</td>
@@ -119,6 +135,7 @@
             <td>Module 1</td>
             <td>Completed</td>
             </tr> 
+
             <tr>
             <td>0</td>
             <td>Wed</td>
@@ -127,56 +144,100 @@
             <td>Module 0</td>
             <td>Completed</td>
             </tr>
+
         </tbody>
-        <tfoot>
-            <th colspan="6">
-                <a href="https://udc.blackboard.com/ultra/courses/_123907_1/outline/lti/launchFrame?toolHref=https:~2F~2Fudc.blackboard.com~2Fwebapps~2Fblackboard~2Fexecute~2Fblti~2FlaunchPlacement%3Fblti_placement_id%3D_711_1%26content_id%3D_3862605_1%26course_id%3D_123907_1%26wrapped%3Dtrue%26from_ultra%3Dtrue&toolTitle=Webex%20LTI%201.3">View Recordings</a>    
-            </th>
-        </tfoot>
-     
+               
 </table>
 
 <hr>
 
-<h6 style="font-size:30px;color:darkgreen;font-family:verdana;">Contact Me</h6>
+<header id="contact_me">
 
-<h6 style="font-size:20px;color:darkgreen;font-family:verdana;">HTML Form</h6>
+    <h2 style="font-size:30px;color:darkgreen;font-family:verdana;">Contact Me</h2>
 
-<form action="/action_page.php" target="_blank">
+</header>
 
+<h3 style="font-family:verdana;">HTML Form</h3>
+
+<form action="/httpbin.org/get">
+
+<fieldset>
+    <legend>Personal Info</legend>
+<p>
     <label for="fname">First Name</label><br>
     <input type="text" id="fname" name="fname" placeholder="Jane"><br>
+</p>
+
+<p>
     <label for="lname">Last Name</label><br>
     <input type="text" id="lname" name="lname" placeholder="Doe" required>
+</p>
 
-<br><br>
+</fieldset>
 
-<P>Which Web languages do you already know?</P>
+<fieldset>
+    <legend>Which Web languages do you already know?</legend>
+
+<p>
 <input type="checkbox" id="language1" name="html">
-<label for="language1">HTLM</label><br>
+<label for="language1">HTLM</label>
+</p>
+
+<p>
 <input type="checkbox" id="language2" name="css">
-<label for="language2">CSS</label><br>
+<label for="language2">CSS</label>
+</p>
+
+<p>
 <input type="checkbox" id="language3" name="javascript">
-<label for="language3">JavaScript</label><br>
-<input type="checkbox" id="language4" name="none">
-<label for="language4">None</label><br>
+<label for="language3">JavaScript</label>
+</p>
 
-<br>
+</fieldset>
 
-<p>What Web language are you most excited to learn?</p>
+<fieldset>
+    <legand>What Web language are you most excited to learn?</legand> 
+
+<p>
 <input type="radio" id="html" name="excited_learn" value="HTML">
 <label for="html">HTML</label><br>
+</p>
+
+<p>
 <input type="radio" id="css" name="excited_learn" value="CSS">
 <label for="css">CSS</label><br>
+</p>
+
+<p>
 <input type="radio" id="javascript" name="excited_learn" value="javascript">
 <label for="javascript">JavaScript</label><br>
+</p>
 
-<br><br>
+</fieldset>
 
-<input type="submit" value="Submit">
+<fieldset>
+    <legend>Send Me A Note</legend>
+   <p>
+    <label for="message">Your Message:</label>
+    <br>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here."></textarea>
+    </p>
+</fieldset>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
 
 </form>
 
+<hr>
+
 </body>
+
+<footer>
+
+    <a href="W3Example.html">Back to Top</a>
+    <p style="font-size: 30px; color: darkgreen; font-family:verdana">&copy; Angela Ruslander</p>
+
+</footer>
 
 </html>
